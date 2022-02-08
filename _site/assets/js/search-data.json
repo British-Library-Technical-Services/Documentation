@@ -2,13 +2,67 @@
     "doc": "About",
     "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
-    "url": "http://localhost:4000/documentation/about/",
+    "url": "http://localhost:4000/Documentation/about/",
     "relUrl": "/about/"
   },"1": {
-    "doc": "tape",
-    "title": "tape",
+    "doc": "Cassette",
+    "title": "Cassette",
+    "content": "This is how to transfer cassette . ",
+    "url": "http://localhost:4000/Documentation/docs/transfer_processes/cassette.html",
+    "relUrl": "/docs/transfer_processes/cassette.html"
+  },"2": {
+    "doc": "How to Build a SIP",
+    "title": "How to Build a SIP",
+    "content": "This page contains instructions for building a Submission Information (SIP). ",
+    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/how_to_build_a_SIP.html",
+    "relUrl": "/docs/AVSIPGEN/how_to_build_a_SIP.html"
+  },"3": {
+    "doc": "How to Name a File",
+    "title": "How to Name a File",
+    "content": " ",
+    "url": "http://localhost:4000/Documentation/docs/filenaming_schema/how_to_name_a_file.html",
+    "relUrl": "/docs/filenaming_schema/how_to_name_a_file.html"
+  },"4": {
+    "doc": "Transfer Processes",
+    "title": "Transfer Processes",
+    "content": "Navigate to each format for instruction on transfer processes at the British Library . ",
+    "url": "http://localhost:4000/Documentation/docs/transfer_processes/",
+    "relUrl": "/docs/transfer_processes/"
+  },"5": {
+    "doc": "Quality Control",
+    "title": "Quality Control",
+    "content": "Follow the link below to read the Library’s audio Quality Control guidelines . ",
+    "url": "http://localhost:4000/Documentation/docs/quality_control/",
+    "relUrl": "/docs/quality_control/"
+  },"6": {
+    "doc": "Filenaming Schema",
+    "title": "Filenaming Schema",
+    "content": " ",
+    "url": "http://localhost:4000/Documentation/docs/filenaming_schema/",
+    "relUrl": "/docs/filenaming_schema/"
+  },"7": {
+    "doc": "AV SIP Generator",
+    "title": "AV SIP Generator",
+    "content": " ",
+    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/",
+    "relUrl": "/docs/AVSIPGEN/"
+  },"8": {
+    "doc": "MiniDisc",
+    "title": "MiniDisc",
+    "content": "This is how to transfer minidisc . ",
+    "url": "http://localhost:4000/Documentation/docs/transfer_processes/minidisc.html",
+    "relUrl": "/docs/transfer_processes/minidisc.html"
+  },"9": {
+    "doc": "Quality Control Workflow",
+    "title": "Quality Control Workflow",
+    "content": " ",
+    "url": "http://localhost:4000/Documentation/docs/quality_control/quality_control_workflow.html",
+    "relUrl": "/docs/quality_control/quality_control_workflow.html"
+  },"10": {
+    "doc": "Tape",
+    "title": "Tape",
     "content": "This is how to transfer tape . ",
-    "url": "http://localhost:4000/documentation/transfer/tape/",
-    "relUrl": "/transfer/tape/"
+    "url": "http://localhost:4000/Documentation/docs/transfer_processes/tape.html",
+    "relUrl": "/docs/transfer_processes/tape.html"
   }
 }

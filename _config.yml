@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "Documentation" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Documentation" # the subpath of your site, e.g. /blog
+url: "https://british-library-technical-services.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -53,3 +53,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+#logo: "/assets/images/just-the-docs.png"
+
+aux_links:
+  "Visit the British Library":
+    - "https://www.bl.uk/"
+
+footer_content: "Copyright British Library"
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y"
