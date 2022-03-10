@@ -37,13 +37,20 @@ A record of where the digital file was digitised, typically the institution.
 
 
 ### 2. Shelf Mark
-The shelf mark of the physical item from which the digital file was created.  
+The Shelf Mark of the physical item from which the digital file was created.  
 
-Replace any existing separators in your shelf mark (e.g. ‘/’, ‘.’, ‘ ‘, &c.) with a hyphen (‘-‘) as necessary
+Replace any existing separators in your Shelf Mark (e.g. ‘/’, ‘.’, ‘ ‘, &c.) with a hyphen (‘-‘) as necessary
 
 | Description | Example |
 | :--- | :--- |
 | C182/4 | BL_C182-4_ |
+
+### OPTION. Item Number
+Where multiple physical items have been accessioned under a single Shelf Mark, e.g. published box sets, double cd releases. Add an ‘item number’ to ensure filenames remain unique.  This is the only optional element in the schema and should be omitted where unique Shelf Marks exist for individual items.  
+
+| Description | Example |
+| :--- | :--- |
+| First item from a box set of eight CDs | BL_1SS0005728_i1_ |
 
 ### 3. Side Number
 Record the Side of the physical item from which the file was made.
