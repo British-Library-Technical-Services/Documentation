@@ -7,13 +7,13 @@
   },"1": {
     "doc": "Audio Quality Control",
     "title": "Audio Quality Control",
-    "content": "The following Quality Control (QC) checks should be completed on the digital file, transfer methodology, Submission Information Package (SIP) and Tracking Database. QC is undertaken by comparing the original item to the preservation audio files; it should not be completed against the files alone. ",
+    "content": "The following Quality Control (QC) checks should be completed on the digital file, transfer methodology, Submission Information Package (SIP) and Tracking Database. QC is undertaken by comparing the original item to the preservation audio files; it cannot typically be completed against the files alone. ",
     "url": "http://localhost:4000/Documentation/quality_control/audio_quality_control/",
     "relUrl": "/quality_control/audio_quality_control/"
   },"2": {
     "doc": "Audio Quality Control",
     "title": "Digital File",
-    "content": ". | The filename is correct and adheres to the Library’s schema | There is no whitespace or illegal characters in the filename | The correct metadata is stored in the file’s RIFF Header | The file has been edited with one second of silence before the start of the signal modulation | The file has been edited with one second of silence at the end of the signal modulation | The signal does not peak at 0dB (analogue source) | There are no sample drop outs visible in the spectrum view | Any blank audio channels have been removed | . ",
+    "content": ". | The filename is correct and adheres to the Library’s schema | There is no whitespace or illegal characters in the filename | The correct metadata is stored in the file’s RIFF Header | The file has been edited with one second of silence before the start of the signal modulation | The file has been edited with one second of silence at the end of the signal modulation | The signal does not peak at 0dB (analogue source) | There are no sample-clock errors or drop outs visible (see Spectrum Analysis) | Any blank audio channels have been removed | . ",
     "url": "http://localhost:4000/Documentation/quality_control/audio_quality_control/#digital-file",
     "relUrl": "/quality_control/audio_quality_control/#digital-file"
   },"3": {
@@ -31,7 +31,7 @@
   },"5": {
     "doc": "Audio Quality Control",
     "title": "Tracking Database",
-    "content": "| Field | Value | . | Transferred from | Source Item (e.g. Original) | . | Transfer Date | DD/MM/YY | . | Engineer | Name | . | Equipment | List of replay equipment | . | P-SIP Date | DD/MM/YY | . | P-SIP Engineer | Name | . | Speed {310} | 9.5cm/s, 19 cm/s etc. | . | Track Config. {310} | Mono, Stereo etc. | . | Item Notes {502} | Any relevant details about the physical item’s condition | . | Sound Quality | General comments about the quality of the recorded audio that cannot be rectified in transfer | . ",
+    "content": "Transfer (File-based) . | Field | Value | . | Transferred from | Source Item (e.g. Original) | . | Transfer Date | DD/MM/YY | . | Engineer | Name | . | Equipment | List of replay equipment | . P-SIP . | Field | Value | . | P-SIP Date | DD/MM/YY | . | P-SIP Engineer | Name | . Technical Notes . | Field | Value | . | Speed {310} | 9.5cm/s, 19 cm/s etc. | . | Track Config. {310} | Mono, Stereo etc. | . | Item Notes {502} | Any relevant details about the physical item’s condition | . | Sound Quality Notes {522} | General comments about the quality of the recorded audio that cannot be rectified in transfer | . On completion the QC Status should be recorded in the Tracking Database. For more information see: Quality Control Status . ",
     "url": "http://localhost:4000/Documentation/quality_control/audio_quality_control/#tracking-database",
     "relUrl": "/quality_control/audio_quality_control/#tracking-database"
   },"6": {
@@ -59,39 +59,39 @@
     "url": "http://localhost:4000/Documentation/docs/filenaming_schema/how_to_name_a_file.html#introduction",
     "relUrl": "/docs/filenaming_schema/how_to_name_a_file.html#introduction"
   },"10": {
-    "doc": "British Library Sound &amp; Vision, Technical Services",
-    "title": "British Library Sound &amp; Vision, Technical Services",
-    "content": "The Technical Services team in Sound &amp; Vision is responsible for the preservation of the Library’s physical sound collection, the development of technologies to preserve future digital acquisitions, and for making our collections accessible to those who wish to hear them. This is the central documentation repository for audio preservation undertaken at the British Library. ",
+    "doc": "British Library Sound &amp; Vision",
+    "title": "British Library Sound &amp; Vision",
+    "content": " ",
     "url": "http://localhost:4000/Documentation/",
     "relUrl": "/"
   },"11": {
-    "doc": "Transfer Processes",
-    "title": "Transfer Processes",
-    "content": "Navigate to each format for instruction on transfer processes at the British Library . ",
-    "url": "http://localhost:4000/Documentation/docs/transfer_processes/",
-    "relUrl": "/docs/transfer_processes/"
+    "doc": "British Library Sound &amp; Vision",
+    "title": "Technical Services",
+    "content": "The Technical Services team in Sound &amp; Vision is responsible for the preservation of the Library’s physical sound collection, the development of technologies to preserve future digital acquisitions, and for making our collections accessible to those who wish to hear them. This is the central documentation repository for audio preservation undertaken at the British Library. All pages are currently in draft form and very much work in progress! . ",
+    "url": "http://localhost:4000/Documentation/#technical-services",
+    "relUrl": "/#technical-services"
   },"12": {
-    "doc": "Quality Control",
-    "title": "Table of Contents",
-    "content": "Audio Quality Control . ",
-    "url": "http://localhost:4000/Documentation/docs/quality_control/#table-of-contents",
-    "relUrl": "/docs/quality_control/#table-of-contents"
-  },"13": {
-    "doc": "Quality Control",
-    "title": "Quality Control",
-    "content": "Quality Control (QC) is the final stage of the digitisation workflow. An engineer will assess a percentage of their colleagues transfer work to ensure all necessary standards are met. The work is completed by assessing the quality of the technical transfer and the accompanying metadata. Follow the links below to read the Library’s Quality Control guidelines. ",
-    "url": "http://localhost:4000/Documentation/docs/quality_control/",
-    "relUrl": "/docs/quality_control/"
-  },"14": {
     "doc": "Filenaming Schema",
     "title": "Filenaming Schema",
     "content": " ",
     "url": "http://localhost:4000/Documentation/docs/filenaming_schema/",
     "relUrl": "/docs/filenaming_schema/"
+  },"13": {
+    "doc": "Quality Control",
+    "title": "Quality Control",
+    "content": "Quality Control (QC) is the final stage of the digitisation workflow. An engineer will assess a percentage of their colleagues transfer work to ensure the necessary best practice and standards are met. The work is completed by assessing the quality of the technical transfer and its accompanying metadata. QC is necessary for collections consisting of five or more items. Collections with less than five items should have their status set to Not Required in the Tracking Database. Full QC guidelines for audio preservation can be found in the Table of Contents below. ",
+    "url": "http://localhost:4000/Documentation/docs/quality_control/",
+    "relUrl": "/docs/quality_control/"
+  },"14": {
+    "doc": "Transfer Processes",
+    "title": "Transfer Processes",
+    "content": "Navigate to each format for instruction on transfer processes at the British Library . ",
+    "url": "http://localhost:4000/Documentation/docs/transfer_processes/",
+    "relUrl": "/docs/transfer_processes/"
   },"15": {
     "doc": "AV SIP Generator",
     "title": "AV SIP Generator",
-    "content": " ",
+    "content": "The AV SIP Generator is Sound &amp; Vision’s web-based tool for building Submission Information Packages (SIP). ",
     "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/",
     "relUrl": "/docs/AVSIPGEN/"
   },"16": {
@@ -101,18 +101,24 @@
     "url": "http://localhost:4000/Documentation/docs/transfer_processes/minidisc.html",
     "relUrl": "/docs/transfer_processes/minidisc.html"
   },"17": {
-    "doc": "Quality Control Status",
-    "title": "Quality Control Status",
-    "content": "Once the Quality Control (QC) checks are complete, the QC Engineer should update the Tracking Database to reflect the QC status with the following fields: . | Field | Value | . | QC Date | DD/MM/YY | . | QC Status | Pass, Fail, Not Required | . | QC Engineer | Name | . | QC Notes | Any relevant notes | . ",
-    "url": "http://localhost:4000/Documentation/quality_control/quality_control_status/",
-    "relUrl": "/quality_control/quality_control_status/"
+    "doc": "Spectrum Analysis",
+    "title": "Spectrum Analysis",
+    "content": "Analysis of the audio signal via its frequency spectrum can highlight issues that are not easily identifiable through the waveform view alone, such as sample-clock errors. The Spectrogram view in Wavelab 10.x is accessible from the main Editor Window. Many sample-clock errors are not visible from the default settings so it is advisable to adjust the amplitude range to see more of the frequency spectrum. ",
+    "url": "http://localhost:4000/Documentation/quality_control/quality_control_spectrum_analysis/",
+    "relUrl": "/quality_control/quality_control_spectrum_analysis/"
   },"18": {
     "doc": "Quality Control Status",
+    "title": "Quality Control Status",
+    "content": "Once the Quality Control (QC) checks are complete, the QC Engineer should update the Tracking Database to reflect the QC status with the following fields: . QC: Transfer / P-SIP . | Field | Value | . | QC Date | DD/MM/YY | . | QC Status | Pass, Fail, Not Required | . | QC Engineer | Name | . | QC Notes | Any relevant notes | . ",
+    "url": "http://localhost:4000/Documentation/quality_control/quality_control_status/",
+    "relUrl": "/quality_control/quality_control_status/"
+  },"19": {
+    "doc": "Quality Control Status",
     "title": "Recording the Status",
-    "content": "Pass . All QC checks pass and the no further action is required . Fail . If one or more checks has not been met, the item should be marked as Fail and the relevant details added to the QC Notes field for the Transfer Engineer. The Transfer Engineer should be notified and the original item returned to them for remedial action. Resolved . When the QC Fail is subsequently fixed the Transfer Engineer should update the status to Resolved and add any relevant details to QC Notes field. Not Required . Items in the collection that are not subject to QC checks should have their status set to Not Required. ",
+    "content": "Pass . All QC checks pass and the no further action is required . Fail . If one or more checks has not been met, the item should be marked as Fail and the relevant details added to the QC Notes field for the Transfer Engineer. The Transfer Engineer should be notified and the original item returned to them for remedial action. Resolved . When the QC Fail is subsequently fixed the Transfer Engineer should update the status to Resolved and add any relevant details to QC Notes field. Not Required . Items in the collection that are not subject to QC checks should have their status set to Not Required. Even with a Not Required status, all the above Database fields should be completed so we can accurately track the progress of a collection. ",
     "url": "http://localhost:4000/Documentation/quality_control/quality_control_status/#recording-the-status",
     "relUrl": "/quality_control/quality_control_status/#recording-the-status"
-  },"19": {
+  },"20": {
     "doc": "Tape",
     "title": "Tape",
     "content": "This is how to transfer tape . ",
