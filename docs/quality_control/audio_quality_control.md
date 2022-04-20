@@ -21,7 +21,7 @@ QC is undertaken by comparing the original item to the preservation audio files;
 * The file has been edited with one second of silence before the start of the signal modulation
 * The file has been edited with one second of silence at the end of the signal modulation
 * The signal does not peak at 0dB (analogue source)
-* There are no sample drop outs visible in the spectrum view
+* There are no sample-clock errors or drop outs visible (see [Spectrum Analysis](quality_control_spectrum_analysis.md))
 * Any blank audio channels have been removed
 
 ## Transfer Methodology
@@ -77,4 +77,4 @@ __Technical Notes__
 | Sound Quality Notes {522} | General comments about the quality of the recorded audio that cannot be rectified in transfer |
 
 On completion the QC Status should be recorded in the Tracking Database.  For more information see:
-[Quality Control Status](/docs/quality_control_status.md)
+[Quality Control Status](quality_control_status.md)
