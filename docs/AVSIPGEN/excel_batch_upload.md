@@ -6,6 +6,8 @@ parent: AV SIP Generator
 nav_order: 2
 ---
 
+<img src="{{ site.baseurl }}/assets/images/2_choose_file.png">
+
 # Excel Batch Upload
 
 The Excel Batch Upload option in the AV SIP Generator automates the creation of multiple Submission Information Packages (SIP) up to and including Stage 5.
@@ -91,7 +93,6 @@ From the Create New menu on the main page, click the **New Excel Batch Upload >>
 
 From the Create New Batch from Excel page, click **Choose File** under the Select Your Excel file heading.
 
-<img src="{{ site.baseurl }}/assets/images/2_choose_file.png">
 ![image choose file](/assets/images/2_choose_file.png)
 
 Navigate to your Excel Batch spreadsheet.
