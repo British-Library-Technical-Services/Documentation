@@ -91,7 +91,7 @@ From the Create New menu on the main page, click the **New Excel Batch Upload >>
 
 From the Create New Batch from Excel page, click **Choose File** under the Select Your Excel file heading.
 
-img src="{{ site.baseurl }}/assets/images/2_choose_file.png">
+<img src="{{ site.baseurl }}/assets/images/2_choose_file.png">
 ![image choose file](/assets/images/2_choose_file.png)
 
 Navigate to your Excel Batch spreadsheet.
