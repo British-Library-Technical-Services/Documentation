@@ -22,7 +22,7 @@ title: British Library Sound & Vision
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the central documentation repository for audio preservation undertaken at the British Library.
-baseurl: "/Documentation" # the subpath of your site, e.g. /blog
+baseurl: /Documentation # the subpath of your site, e.g. /blog
 url: "https://british-library-technical-services.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BLSoundHeritage
 github_username:  British-Library-Technical-Services
