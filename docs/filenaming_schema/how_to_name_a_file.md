@@ -3,7 +3,7 @@ layout: page
 title: How to Name a File
 last_modified_date: "2022-02-11"
 parent: Filenaming Schema
-nav_order: 2
+nav_order: 1
 ---
 # How to Name a File
 

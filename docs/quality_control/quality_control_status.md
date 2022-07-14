@@ -4,7 +4,7 @@ title: Quality Control Status
 last_modified_date: "2022-03-11"
 author: Tom Ruane
 parent: Quality Control
-nav_order: 2
+nav_order: 3
 permalink: /quality_control/quality_control_status/
 ---
 # Quality Control Status

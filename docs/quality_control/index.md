@@ -3,7 +3,7 @@ layout: default
 title: Quality Control
 date: "2022-03-11"
 author: Tom Ruane
-nav_order: 2
+nav_order: 5
 has_children: true
 ---
 # Quality Control

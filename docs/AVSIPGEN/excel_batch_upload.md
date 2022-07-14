@@ -6,8 +6,6 @@ parent: AV SIP Generator
 nav_order: 2
 ---
 
-
-
 # Excel Batch Upload
 
 The Excel Batch Upload option in the AV SIP Generator automates the creation of multiple Submission Information Packages (SIP) up to and including Stage 5.
@@ -89,20 +87,20 @@ Log in to the AV SIP Generator.
 
 From the Create New menu on the main page, click the **New Excel Batch Upload >>** button.
 
-<img src="{{ site.baseurl }}/assets/images/1_new_batch_excel_upload.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/1_new_batch_excel_upload.png">
 
 From the Create New Batch from Excel page, click **Choose File** under the Select Your Excel file heading.
 
-<img src="{{ site.baseurl }}/assets/images/2_choose_file.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/2_choose_file.png">
 
 Navigate to your Excel Batch spreadsheet.
 The batch will then be added to the Batch Preprocessing queue.  
 
-<img src="{{ site.baseurl }}/assets/images/3_batches_preprocessing.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/3_batches_preprocessing.png">
 
 Preprocessing validation checks for each row of the batch will begin, click the **View** button to see their progress.
 
-<img src="{{ site.baseurl }}/assets/images/4_preprocessing.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/4_preprocessing.png">
 
 If the preprocessing completes with no errors the queued batch will turn green and Status set to **Valid**.
 
@@ -110,7 +108,7 @@ If any of the rows fail, the batch will change red and the Status set to **Faile
 
 After the batch validates successfully, a **Make SIPs** button will appear in the Continue column.  Click this to submit the batch and build the SIPs.
 
-<img src="{{ site.baseurl }}/assets/images/5_make_sips.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/5_make_sips.png">
 
 ### 2. My Excel Batch Uploads
 To view the progress of the batch, click the **View My Batch Uploads >>** button from the Create New menu on the home page.
@@ -123,14 +121,14 @@ The Status column will list the overall progress of the batch:
 * **In progress**: SIPs are in the process of being built
 * **Valid**: All SIPs have successfully completed up to and including Stage 5
 
-<img src="{{ site.baseurl }}/assets/images/6_batches_processing.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/6_batches_processing.png">
 
 To see the Status of the individual SIPs in the batch, click the **View >>** button.  On the SIP Batch page you will see each SIP in the batch listed and a traffic light system, indicating the current status of each step.  
 
-<img src="{{ site.baseurl }}/assets/images/7_sips_processing.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/7_sips_processing.png">
 
 A SIP is complete when the Status indicates **Processed**.
 
-<img src="{{ site.baseurl }}/assets/images/8_sips_processed.png">
+<img src="{{ site.baseurl }}/assets/images/excel_batch_upload/8_sips_processed.png">
 
 The 5 Steps of the SIP can be accessed and amended by clicking on the individual step buttons or picked-up from Stage 5 using the **Resume >>** button.  

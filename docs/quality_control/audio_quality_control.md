@@ -4,7 +4,7 @@ title: Audio Quality Control
 last_modified_date: "2022-03-11"
 author: Tom Ruane
 parent: Quality Control
-nav_order: 2
+nav_order: 1
 permalink: /quality_control/audio_quality_control/
 ---
 
