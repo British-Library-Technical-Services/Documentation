@@ -95,11 +95,11 @@
     "url": "http://localhost:4000/Documentation/docs/filenaming_schema/",
     "relUrl": "/docs/filenaming_schema/"
   },"16": {
-    "doc": "Quality Control",
-    "title": "Quality Control",
-    "content": "Quality Control (QC) is the final stage of the digitisation workflow. An engineer will assess a percentage of their colleagues transfer work to ensure the necessary best practice and standards are met. The work is completed by assessing the quality of the technical transfer and its accompanying metadata. QC is necessary for collections consisting of five or more items. Collections with less than five items should have their status set to Not Required in the Tracking Database. Full QC guidelines for audio preservation can be found in the Table of Contents below. ",
-    "url": "http://localhost:4000/Documentation/docs/quality_control/",
-    "relUrl": "/docs/quality_control/"
+    "doc": "AV SIP Generator",
+    "title": "AV SIP Generator",
+    "content": "The AV SIP Generator is Sound &amp; Vision’s web-based tool for building Submission Information Packages (SIP). ",
+    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/",
+    "relUrl": "/docs/AVSIPGEN/"
   },"17": {
     "doc": "Transfer Processes",
     "title": "Transfer Processes",
@@ -107,11 +107,11 @@
     "url": "http://localhost:4000/Documentation/docs/transfer_processes/",
     "relUrl": "/docs/transfer_processes/"
   },"18": {
-    "doc": "AV SIP Generator",
-    "title": "AV SIP Generator",
-    "content": "The AV SIP Generator is Sound &amp; Vision’s web-based tool for building Submission Information Packages (SIP). ",
-    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/",
-    "relUrl": "/docs/AVSIPGEN/"
+    "doc": "Quality Control",
+    "title": "Quality Control",
+    "content": "Quality Control (QC) is the final stage of the digitisation workflow. An engineer will assess a percentage of their colleagues transfer work to ensure the necessary best practice and standards are met. The work is completed by assessing the quality of the technical transfer and its accompanying metadata. QC is necessary for collections consisting of five or more items. Collections with less than five items should have their status set to Not Required in the Tracking Database. Full QC guidelines for audio preservation can be found in the Table of Contents below. ",
+    "url": "http://localhost:4000/Documentation/docs/quality_control/",
+    "relUrl": "/docs/quality_control/"
   },"19": {
     "doc": "Maintenance Tasks",
     "title": "Maintenance Tasks",
@@ -146,20 +146,20 @@
     "doc": "Post-Transfer Tasks",
     "title": "Post-Transfer Tasks",
     "content": " ",
-    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/post-transfer_tasks.html",
-    "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html"
+    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/post-transfer_tasks.html#post-transfer-tasks",
+    "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html#post-transfer-tasks"
   },"25": {
     "doc": "Post-Transfer Tasks",
     "title": "1. How to Swap Sides",
-    "content": "In certain circumstances it will be necessary to change the existing Physical Structure in a SIP. The following guide outlines the steps to swap files between Sides: . | Search the item Shelfmark(s) in the Pickup SIP search box . | Click on the Stage 4 Physical Structure button . | This will take you to the Physical Structure pages, where you can view the existing structure . | To swap the files between sides, click on the listed file and a drop down will appear with all the files associated with that SIP . | Select a file from the list to represent that Side in the Physical Structure | If the file is already associated with an existing physical object or side, the file will highlight in red . | Continue to reassign all the required files to their relative Sides in the Physical Structure and the red highlight will disappear . | Once complete, click Save, then Step Complete, and Continue &gt; . | Press Step Complete and Continue on all subsequent Steps, this will re-save the existing data in each Step, without altering it . | . ",
+    "content": "In certain circumstances it will be necessary to change the existing Physical Structure in a SIP. The following guide outlines the steps to download, rename, re-add and reassign the files in the Physical Structure: . Note: it is advisable to download backup copies of the WAV files from the Summary Page before making any changes, in case you need to revert back to the original files. Details on downloading files from the AV SIP Generator can be found at Downloading Files . | Search the item Shelfmark(s) in the Pickup SIP search box . | Click on the Stage 2 Select Files button . | This will take you to the Select Source Files page, where you can view all the files attached to the SIP . | To remove the files from the SIP for renaming, click the minus (-) symbol next to each file listed under the Selected Audio Files section. Take note of the \\server\\directory source location as this is where the files will be moved back to. Note: if the source directory no longer exists the SIP Tool will throw up an error. To overcome this, recreate the original directory structure on the server so the files can be moved back to the source location . | After deselecting the files, click Save to record the change . | Navigate to the source directory on the server and locate the files | Delete the .md5 file checksums | Rename the files to match the new Physical Structure . | Return to the Select Source Files page and click Get directories and files Note: the source path to the files should be saved from the original selection . | A file list will appear, select the files to re-attach to the SIP by pressing the plus (+) symbol next to each one | The selected files will be listed below in the Selected Audio Files section . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » . | This will take you to Step 4: File Analysis, Validation, and Transformation | Click the Copy All Files (Overwrite) button . | The files will be copied from their source location to the hold area for analysis . | After successful verification the files will be passed to the transformation servers . | Once all processing is complete, press Save | To move to the next Step tick the Step Complete box and press Continue » | This will take you to Step 5: Physical Structure, where the existing, empty Physical Structure will be visible . | Click on Select file… drop-down list and assign the renamed files to their respective Node(s) and Sides . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » . | Press Step Complete and Continue on all subsequent Steps, this will re-save the existing data in each Step, without altering it | . ",
     "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/post-transfer_tasks.html#1-how-to-swap-sides",
     "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html#1-how-to-swap-sides"
   },"26": {
     "doc": "Post-Transfer Tasks",
-    "title": "2. How to Regroup SIPs",
+    "title": "Post-Transfer Tasks",
     "content": " ",
-    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/post-transfer_tasks.html#2-how-to-regroup-sips",
-    "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html#2-how-to-regroup-sips"
+    "url": "http://localhost:4000/Documentation/docs/AVSIPGEN/post-transfer_tasks.html",
+    "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html"
   },"27": {
     "doc": "Spectrum Analysis",
     "title": "Spectrum Analysis",
