@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Post-Transfer Tasks
-last_modified_date: "2022-07-27"
+last_modified_date: "2022-08-11"
 parent: AV SIP Generator
 nav_order: 3
 ---
@@ -23,11 +23,11 @@ nav_order: 3
 
 ## 1. How to Swap Sides
 
-In certain circumstances it will be necessary to change the existing Physical Structure in a SIP.  The following guide outlines the steps to download, rename, re-add and reassign the files in the Physical Structure:
+In certain circumstances it will be necessary to change the existing Physical Structure in a SIP.  The following guide outlines the steps to download, rename, re-add and reassign the files in the Physical Structure.
 
-_Note: it is advisable to download backup copies of the WAV files from the Summary Page before making any changes, in case you need to revert back to the original files.  Details on downloading files from the AV SIP Generator can be found at [Downloading Files](link)_
+Before making any changes **download backup copies** of the WAV files from the Summary Page in case you need to revert back to the original files.  Details on downloading files from the AV SIP Generator can be found at [Downloading Files](downloading_files.md)
 
-1. Search the item Shelfmark(s) in the **Pickup SIP** search box
+1. Search the item Shelfmark in the **Pickup SIP** search box
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/1_pickup_sip.png">
 
@@ -39,21 +39,26 @@ _Note: it is advisable to download backup copies of the WAV files from the Summa
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/3_select_files.png">
 
-4. To remove the files from the SIP for renaming, click the minus (-) symbol next to each file listed under the Selected Audio Files section.  Take note of the \\server\directory source location as this is where the files will be moved back to. _Note: if the source directory no longer exists the SIP Tool will throw up an error.  To overcome this, recreate the original directory structure on the server so the files can be moved back to the source location_  
+4. Take note of the source \\server\directory as this is the location the files will be returned to. To remove the files from the SIP, click the minus (-) symbol next to each file listed under the Selected Audio Files section. 
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/4_deselect_files.png">
+
+_Note: if the source directory has since been deleted an error will appear stating the location no longer exists.  To overcome this, recreate the original directory structure on the server so the files can be moved back to their source location_
+
 
 5. After deselecting the files, click **Save** to record the change
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/5_deselect_files.png">
 
-6. Navigate to the source directory on the server and locate the files
+6. Leave the SIP tool and use Windows File Explorer to navigate to the source directory where the files are now stored
 7. Delete the .md5 file checksums
-8. Rename the files to match the new Physical Structure
+8. Rename the files to match the new ordering. For example s1_f01_v1 => s2_f01_v1
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/6_file_rename.png">
 
-9. Return to the Select Source Files page and click **Get directories and files** _Note: the source path to the files should be saved from the original selection_
+_Details on the Library's file naming schema for audio files can be found at [How to Name a File](../filenaming_schema/how_to_name_a_file.md)_
+
+9. Return to the Select Source Files page and click **Get directories and files**. _Note: the source path to the files should be saved from the original selection_
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/7_get_files.png">
 

@@ -47,4 +47,4 @@ WARNING: this will fully delete all traces of the SIP and remove any files assoc
 * Run the [sip_delete.py](https://github.com/British-Library-Technical-Services/AV-Scripts/blob/6667c5af1ffcf327fc790e947062e360663f4c37/AVSIPGEN/sip_delete.py) Python script from the command line interface
 * The script will run through the list and fully delete the SIPs, including all associated files
 
-_Note the above scripts reuire the __config.py__ _file to function_
+_Note the above scripts reuire the __config.py__ file to function_
