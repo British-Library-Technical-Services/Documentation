@@ -43,7 +43,7 @@ Before making any changes **download backup copies** of the WAV files from the S
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/4_deselect_files.png">
 
-_Note: if the source directory has since been deleted an error will appear stating the location no longer exists.  To overcome this, recreate the original directory structure on the server so the files can be moved back to their source location_
+    _Note: if the source directory has since been deleted an error will appear stating the location no longer exists.  To overcome this, recreate the original directory structure on the server so the files can be moved back to their source location_
 
 
 5. After deselecting the files, click **Save** to record the change
@@ -56,7 +56,7 @@ _Note: if the source directory has since been deleted an error will appear stati
 
     <img src="{{ site.baseurl }}/assets/images/post-transfer_tasks/1_swap_sides/6_file_rename.png">
 
-_Details on the Library's file naming schema for audio files can be found at [How to Name a File](../filenaming_schema/how_to_name_a_file.md)_
+    _Details on the Library's file naming schema for audio files can be found at [How to Name a File](../filenaming_schema/how_to_name_a_file.md)_
 
 9. Return to the Select Source Files page and click **Get directories and files**. _Note: the source path to the files should be saved from the original selection_
 
