@@ -8,7 +8,7 @@ nav_order: 1
 
 # How to Build a SIP
 
-The following guide describes the following steps to build a Submission Information Package (SIP) using the British Library's AV SIP Generator:
+This guide describes the required steps to build a Submission Information Package (SIP) using the British Library's AV SIP Generator.
 
 1. [Step 1: Search SAMI](#step-1-search-sami)
 2. [Step 2: Select Source Files](#step-2-select-source-files)
