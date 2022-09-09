@@ -2,9 +2,9 @@
 layout: page
 title: How to Name a File
 last_modified_date: "2022-02-11"
-parent: Filenaming Schema
+parent: Naming Files
 nav_order: 1
-permalink: /filenaming_schema/
+# permalink: /filenaming_schema/
 ---
 # How to Name a File
 
