@@ -21,12 +21,12 @@ _Note: This guide only covers the Side and File sections of the filename for ill
 
 A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape.  The recordings can run in either direction.  While a tape can only have two physical sides each channel of a 4-Track tape is considered it's own Side.
 
-<!-- | Tape Channel | Filename Side |
+| Tape Channel | Filename Side |
 | :---: | :---: |
 | 1 | s1 |
 | 2 | s2 |
 | 3 | s3 |
-| 4 | s4 | -->
+| 4 | s4 |
 
 <img src="{{ site.baseurl }}/assets/images/filenaming_schema/1_how_to_name_quarter_track_files.png">
 
@@ -36,10 +36,10 @@ A standard Quarter-Track configuration. Two stereo recordings, each recorded on 
 
 <!-- | Channel | Recording | Direction | Filename |
 | :---: | :---: | :---: | :---: |
-| 1 | _1_ | => | s01_f01 |
-| 2 | 2 | <= | s02_f01 |
-| 3 | _1_ | => | s01_f01 |
-| 4 | 2 | <= | s02_f01 | -->
+| **1** | **1** | **>** | **s01_f01** |
+| 2 | 2 | < | s02_f01 |
+| **3** | **1** | **>** | **s01_f01** |
+| 4 | 2 | < | s02_f01 | -->
 
 <img src="{{ site.baseurl }}/assets/images/filenaming_schema/2_how_to_name_quarter_track_files.png">
 
@@ -47,12 +47,24 @@ A standard Quarter-Track configuration. Two stereo recordings, each recorded on 
 
 A mixed configuration of mono and stereo recordings, across all of the four channels.
 
-<!-- | Channel | Recording || Direction | Filename |
-| :---: | :---: | :---: | :---:|
-| 1 | 1 | => | s01_f01 |
-| 2 | 2.1 | 2.2 | => | s02_f01 |
-| 3 | 3 | => | s03_f01 |
-| 4 | 4 | => | s04_f01 | -->
+<!-- | | | | | |
+| :---: | :---: | :---: | :---:| :---:|
+| 1 | s1_f01 |  |  |  |
+|  | > | | | |
+| 2 | s2_f03 | | s2_f02 | s02_f01 |
+|  | < | | < | < |
+| 3 | s3_f01 |  |  | s1_f01 |
+|  | > | | | > |
+| 4 | s4_f02 | | s2_f02 | s04_f01 |
+| | < |  | < | > | -->
+
+<!-- | | | | | |
+| :---: | :---: | :---: | :---:| :---:|
+| 1 | **> s1_f01 >** | | | |
+| 2 | < s2_f03 < | | **< s2_f02 <** | < s02_f01 < |
+| 3 | > s3_f01 > |  |  | **> s1_f01 >** |
+| 4 | < s4_f02 < | | **< s2_f02 <** | < s04_f01 < | -->
+
 
 <img src="{{ site.baseurl }}/assets/images/filenaming_schema/3_how_to_name_quarter_track_files.png">
 

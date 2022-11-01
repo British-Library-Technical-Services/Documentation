@@ -8,4 +8,8 @@ has_children: true
 ---
 # AV SIP Generator
 
-The AV SIP Generator is Sound & Vision's web-based tool for building Submission Information Packages (SIP).
+The AV SIP Generator is Sound & Vision's browser-based tool for building Submission Information Packages (SIP) for ingest into the Library's digital repository for long-term preservation.  
+
+The following pages outline how to use the tool and build a SIP.
+
+

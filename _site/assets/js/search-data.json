@@ -145,13 +145,13 @@
   },"24": {
     "doc": "Naming Files",
     "title": "Naming Files",
-    "content": " ",
+    "content": "The following Naming Files pages outline how to apply the Library’s filenaming schema to preservation audio files. ",
     "url": "/Documentation/docs/naming_files/",
     "relUrl": "/docs/naming_files/"
   },"25": {
     "doc": "AV SIP Generator",
     "title": "AV SIP Generator",
-    "content": "The AV SIP Generator is Sound &amp; Vision’s web-based tool for building Submission Information Packages (SIP). ",
+    "content": "The AV SIP Generator is Sound &amp; Vision’s browser-based tool for building Submission Information Packages (SIP) for ingest into the Library’s digital repository for long-term preservation. The following pages outline how to use the tool and build a SIP. ",
     "url": "/Documentation/docs/AVSIPGEN/",
     "relUrl": "/docs/AVSIPGEN/"
   },"26": {
@@ -217,7 +217,7 @@
   },"36": {
     "doc": "Spectrum Analysis",
     "title": "Spectrum Analysis",
-    "content": "Analysis of the audio signal via its frequency spectrum can highlight issues that are not easily identifiable through the waveform view alone, such as sample-clock errors. The Spectrogram view in Wavelab 10.x is accessible from the main Editor Window. Many sample-clock errors are not visible from the default settings so it is advisable to adjust the amplitude range to see more of the frequency spectrum. ",
+    "content": "Specturm analysis of the audio signal can highlight issues that are not easily identifiable from the waveform view alone, such as clock errors and drop-outs. Clock sync errors visible across the spectrum . To open the Spectrogram in Wavelab, click the Spectrogram tab below the Waveform display in the Audio Editor view. Ensure the full frequecy spectrum is visible by increasing its amplitude by adjusting the sliders below the Editor window. ",
     "url": "/Documentation/quality_control/quality_control_spectrum_analysis/",
     "relUrl": "/quality_control/quality_control_spectrum_analysis/"
   },"37": {
@@ -241,7 +241,7 @@
   },"40": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "1. Four Mono Recordings",
-    "content": "A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape. The recordings can run in either direction. While a tape can only have two physical sides each channel of a 4-Track tape is considered it’s own Side. ",
+    "content": "A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape. The recordings can run in either direction. While a tape can only have two physical sides each channel of a 4-Track tape is considered it’s own Side. | Tape Channel | Filename Side | . | 1 | s1 | . | 2 | s2 | . | 3 | s3 | . | 4 | s4 | . ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings"
   },"41": {
@@ -263,22 +263,40 @@
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html"
   },"44": {
+    "doc": "System Settings",
+    "title": "Wavelab Capture Settings",
+    "content": "The primary Digitial Audio Workstation (DAW) used for audio capture and editing is Steinberg’s Wavelab Pro. The following file capture and edit settings should be applied when first setting up Wavelab and routinely verfied. ",
+    "url": "/Documentation/docs/transfer_processes/system_settings.html#wavelab-capture-settings",
+    "relUrl": "/docs/transfer_processes/system_settings.html#wavelab-capture-settings"
+  },"45": {
+    "doc": "System Settings",
+    "title": "1. Audio Capture",
+    "content": "Open the Recording Dialog from the Main Audio Editor by clicking the Record button in the Transport control, click the blue audio format text to open the Audio File Format window and set the file capture settings: . | Type | Wave (Microsoft) | . | File Extension | wav | . | Audio Format | PCM (uncompressed) | . | Channels | Multi Stereo | . | Sample Rate | 96 000 Hz | . | Bit Depth | 24 | . | Meta-Data | -&gt; Inherit from Source File | . Click Okay to save the settings. ",
+    "url": "/Documentation/docs/transfer_processes/system_settings.html#1-audio-capture",
+    "relUrl": "/docs/transfer_processes/system_settings.html#1-audio-capture"
+  },"46": {
+    "doc": "System Settings",
+    "title": "2. Metadata",
+    "content": "Files are set to embed the following metadata in the RIFF chunk of the WAVE file header: . | Name of engineer | Capture software | Date of transfer | . To automatically write metadata to file during capture, open the Metadata window from Tool Windows &gt; Metadata &gt; RIFF tab &gt; Edit and enter the following values: . | Code | Name | Value | . | IENG | Engineer | Name | . | ISFT | Originator Software | @WaveLabAndVersion@ | . | ICRD | Date | @Date12@T@Time3@Z | . Note - Date and time is formatted in SMPTE-25 . Commit the changes by clicking Use as Default for New .wav Files . Embeded file metadata can be viewed at any time in the Metdata window. ",
+    "url": "/Documentation/docs/transfer_processes/system_settings.html#2-metadata",
+    "relUrl": "/docs/transfer_processes/system_settings.html#2-metadata"
+  },"47": {
+    "doc": "System Settings",
+    "title": "3. File Preferences",
+    "content": "Audio file preferences are set in the File &gt; Preference &gt; Audio Files &gt; File tab, ensure the options are selected / deseleted according to the list below: . | Support RF64 File Format | Create Optimized Audio File Headers | Write Markers in WAV File Header (RIFF Format) | Write Markers in WAV File Header (BWF Format) | Write Markers in Seperate File | Create Peak Files in an Independent Folder | Create Peak Files When Writing Audio Files | . ",
+    "url": "/Documentation/docs/transfer_processes/system_settings.html#3-file-preferences",
+    "relUrl": "/docs/transfer_processes/system_settings.html#3-file-preferences"
+  },"48": {
+    "doc": "System Settings",
+    "title": "System Settings",
+    "content": " ",
+    "url": "/Documentation/docs/transfer_processes/system_settings.html",
+    "relUrl": "/docs/transfer_processes/system_settings.html"
+  },"49": {
     "doc": "Tape",
     "title": "Tape",
     "content": "This is how to transfer tape . ",
     "url": "/Documentation/docs/transfer_processes/tape.html",
     "relUrl": "/docs/transfer_processes/tape.html"
-  },"45": {
-    "doc": "Wavelab Settings",
-    "title": "Wavelab Settings",
-    "content": " ",
-    "url": "/Documentation/docs/transfer_processes/wavelab_settings.html",
-    "relUrl": "/docs/transfer_processes/wavelab_settings.html"
-  },"46": {
-    "doc": "Wavelab Settings",
-    "title": "1. Metadata",
-    "content": "Wavelab is set to write metadata to the WAVE file header at the point of transfer. ",
-    "url": "/Documentation/docs/transfer_processes/wavelab_settings.html#1-metadata",
-    "relUrl": "/docs/transfer_processes/wavelab_settings.html#1-metadata"
   }
 }
