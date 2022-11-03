@@ -5,294 +5,282 @@
     "url": "/Documentation/about/",
     "relUrl": "/about/"
   },"1": {
+    "doc": "Audio Capture Settings",
+    "title": "Audio Capture Settings",
+    "content": "This page outlines the signal flow and settings to capture audio in the Library’s sound studios. Signal is captured from analogue sources at a sample rate of 96kHz and a word-length of 24 bits. The target preservation file format is Lossless PCM WAVE file. Engineers should ensure their equipment settings match those listed below and routinely verify they are correct before undertaking transfer work. | Analogue to Digital Converters . | 1.1 RME Hammerfall DSP | 1.2 Prism Dream ADA-8XR | 1.3 Apogee Rosetta 800 | . | WaveLab . | 2.1 Capture | 2.2 Metadata | 2.3 File Preferences | . | . ",
+    "url": "/Documentation/docs/transfer_processes/audio_capture_settings.html",
+    "relUrl": "/docs/transfer_processes/audio_capture_settings.html"
+  },"2": {
+    "doc": "Audio Capture Settings",
+    "title": "1. Analogue to Digital Converters",
+    "content": "The audio preservation studios are equipped with two 8-channel Analogue-to-Digital converters (ADC), either the Prism Sound Dream ADA-XR or the Apogee Rosetta 800, connected over AES3 to an internal 16-channel RME Hammerfall DSP PCI-E card. Standard signal flow between converters . 1.1 RME Hammerfall DSP . The RME Hammerfall is set as the Master clock for the external ADAs to sync to. To access the RME Hammerfall Control Panel go to the Windows Taskbar and open the application labelled DSP. In the AES(1) tab set the clock Source to Internal. | Clock Mode | – | . | Sample Rate | 96000Hz | . | Source | Internal | . Ensure the settings are correct at the start of each day before transfer. The input status will list Sync for each channel and the sample rate, if any of these values are different or do not remain static, the clock is not syncing and must be corrected. | Input Status | – | – | . | AES 1 | Sync | 96kHz | . | AES 2 | Sync | 96kHz | . | AES 3 | Sync | 96kHz | . | AES 4 | Sync | 96kHz | . 1.2 Prism Dream ADA-8XR . The first Prism Dream ADA-8XR in the stack is set to capture audio inputs 1 - 8. The ADA-8XR has two signal paths, Path 1 encodes analogue input and sends it to the RME Hammerfall. The settings for each path are accessed on the front panel of the interface. 1.2.1 ADC 1, Path 1 . | Source | Decode | Process | Dither / Encode | Sync Source | Sample Rate | Dest | . | Analogue | 24b | Bypass | Flat | DI1 | 48k | DI1 | . |   |   |   | 24b |   | x2 |   | . Path 2 is set to monitor audio back from Wavelab: . 1.2.2 ADC 1, Path 2 . | Source | Decode | Process | Dither / Encode | Sync Source | Sample Rate | Dest | . | DI1 | 24b | Bypass | Flat | DI1 | 48k | Analogue | . |   |   |   | 24b |   | x2 |   | . |   |   |   |   |   | Ext |   | . The second ADA-8XR in the stack captures inputs 9 - 16 and is set to sync its clock to the first ADA-8XR, which is then sync’d to the RME Hammerfall Master clock. Path 1 should be set to the following: . 1.2.3 ADC 2, Path 1 . | Source | Decode | Process | Dither / Encode | Sync Source | Sample Rate | Dest | . | Analogue | 24b | Bypass | Flat | DI2 | 48k | DI1 | . |   |   |   | 24b |   | x2 | DI2 | . 1.3 Apogee Rosetta 800 . The first Apogee Rosetta 800 in the stack is set to capture audio inputs 1 - 8. The second Rosetta 800 is set to capture audio inputs 9 - 16. The front panel settings for both interfaces are set to the following values: . | SAMPLE RATE | (WC I/O) SYNC | LOCK | SOURCE TO DIGITAL OUTS | OUTPUT RESOLUTION | . | 96 | EXT | WIDE NARROW | ANALOGUE | 24-BIT | . |   | AES |   |   |   | . ",
+    "url": "/Documentation/docs/transfer_processes/audio_capture_settings.html#1-analogue-to-digital-converters",
+    "relUrl": "/docs/transfer_processes/audio_capture_settings.html#1-analogue-to-digital-converters"
+  },"3": {
+    "doc": "Audio Capture Settings",
+    "title": "2. WaveLab",
+    "content": "The primary Digitial Audio Workstation (DAW) used for audio capture and editing is Steinberg’s WaveLab Pro. The following file capture and edit settings should be applied when first setting up Wavelab and routinely verfied. 2.1 Capture . Open the Recording Dialog from the Main Audio Editor by clicking the Record button in the Transport control, click the blue audio format text to open the Audio File Format window and set the file capture settings: . | Type | Wave (Microsoft) | . | File Extension | wav | . | Audio Format | PCM (uncompressed) | . | Channels | Multi Stereo | . | Sample Rate | 96 000 Hz | . | Bit Depth | 24 | . | Meta-Data | -&gt; Inherit from Source File | . Click Okay to save the settings. 2.2 Metadata . Files are set to embed the following metadata in the RIFF chunk of the WAVE file header: . | Name of engineer | Capture software | Date of transfer | . To automatically write metadata to file during capture, open the Metadata window from Tool Windows &gt; Metadata &gt; RIFF tab &gt; Edit and enter the following values: . | Code | Name | Value | . | IENG | Engineer | Name | . | ISFT | Originator Software | @WaveLabAndVersion@ | . | ICRD | Date | @Date12@T@Time3@Z | . Note - Date and time is formatted in SMPTE-25 . Commit the changes by clicking Use as Default for New .wav Files . Embeded file metadata can be viewed at any time in the Metdata window. 2.3 File Preferences . Audio file preferences are set in the File &gt; Preference &gt; Audio Files &gt; File tab, ensure the options are selected / deseleted according to the list below: . | Support RF64 File Format | Create Optimized Audio File Headers | Write Markers in WAV File Header (RIFF Format) | Write Markers in WAV File Header (BWF Format) | Write Markers in Seperate File | Create Peak Files in an Independent Folder | Create Peak Files When Writing Audio Files | . ",
+    "url": "/Documentation/docs/transfer_processes/audio_capture_settings.html#2-wavelab",
+    "relUrl": "/docs/transfer_processes/audio_capture_settings.html#2-wavelab"
+  },"4": {
     "doc": "Audio Quality Control",
     "title": "Audio Quality Control",
     "content": "The following Quality Control (QC) checks should be completed on the digital file, transfer methodology, Submission Information Package (SIP) and Tracking Database. QC is undertaken by comparing the original item to the preservation audio files; it cannot typically be completed against the files alone. ",
     "url": "/Documentation/quality_control/audio_quality_control/",
     "relUrl": "/quality_control/audio_quality_control/"
-  },"2": {
+  },"5": {
     "doc": "Audio Quality Control",
     "title": "Digital File",
     "content": ". | The filename is correct and adheres to the Library’s schema | There is no whitespace or illegal characters in the filename | The correct metadata is stored in the file’s RIFF Header | The file has been edited with one second of silence before the start of the signal modulation | The file has been edited with one second of silence at the end of the signal modulation | The signal does not peak at 0dB (analogue source) | There are no sample-clock errors or drop outs visible (see Spectrum Analysis) | Any blank audio channels have been removed | . ",
     "url": "/Documentation/quality_control/audio_quality_control/#digital-file",
     "relUrl": "/quality_control/audio_quality_control/#digital-file"
-  },"3": {
+  },"6": {
     "doc": "Audio Quality Control",
     "title": "Transfer Methodology",
     "content": ". | The content matches the original item | The replay speed is correct | The azimuth on tape/cassette transfers is correctly aligned | All correct replay parameters are applied where appropriate (Noise Reduction etc.) | . ",
     "url": "/Documentation/quality_control/audio_quality_control/#transfer-methodology",
     "relUrl": "/quality_control/audio_quality_control/#transfer-methodology"
-  },"4": {
+  },"7": {
     "doc": "Audio Quality Control",
     "title": "SIP",
     "content": ". | Stages 1-5 are complete | All the correct files are attached | . Stage 4: Physical Structure: . | Each individual Shelfmark and Item are attached to a Node | Each Side is attached to its numbered Side | Each File is attached to the corresponding Side | . Stage 5: Process History: . | The Engineer’s details are correct | A Migration Process is present | All relevant Processes are present and in order (Preparation, Migration, Capture, Editing etc.) | All transfer equipment is listed and attached to the relevant Process | All replay parameters are correct (speed, equalisation etc.) | Equipment serial numbers are listed and correct | The Input-Outputs are correct across the signal chain | . ",
     "url": "/Documentation/quality_control/audio_quality_control/#sip",
     "relUrl": "/quality_control/audio_quality_control/#sip"
-  },"5": {
+  },"8": {
     "doc": "Audio Quality Control",
     "title": "Tracking Database",
     "content": "Transfer (File-based) . | Field | Value | . | Transferred from | Source Item (e.g. Original) | . | Transfer Date | DD/MM/YY | . | Engineer | Name | . | Equipment | List of replay equipment | . P-SIP . | Field | Value | . | P-SIP Date | DD/MM/YY | . | P-SIP Engineer | Name | . Technical Notes . | Field | Value | . | Speed {310} | 9.5cm/s, 19 cm/s etc. | . | Track Config. {310} | Mono, Stereo etc. | . | Item Notes {502} | Any relevant details about the physical item’s condition | . | Sound Quality Notes {522} | General comments about the quality of the recorded audio that cannot be rectified in transfer | . On completion the QC Status should be recorded in the Tracking Database. For more information see: Quality Control Status . ",
     "url": "/Documentation/quality_control/audio_quality_control/#tracking-database",
     "relUrl": "/quality_control/audio_quality_control/#tracking-database"
-  },"6": {
+  },"9": {
     "doc": "Cassette",
     "title": "Cassette",
     "content": "This is how to transfer cassette . ",
     "url": "/Documentation/docs/transfer_processes/cassette.html",
     "relUrl": "/docs/transfer_processes/cassette.html"
-  },"7": {
+  },"10": {
     "doc": "Downloading Files",
     "title": "Downloading Files",
     "content": "Copies of files attached to a SIP can be downloaded for access purposes. For SIPs that have not yet been submitted for ingest, files are downloaded directly within the AV SIP Generator. For Information Packages that have been submitted and ingested into the Library’s digital repository, files are downloaded via the DLS Downloader. Note: both methods will download copies of the files so any changes made will not affect the files attached to the Information Package . ",
     "url": "/Documentation/AVSIPGEN/downloading_files",
     "relUrl": "/AVSIPGEN/downloading_files"
-  },"8": {
+  },"11": {
     "doc": "Downloading Files",
     "title": "1. Pre-Ingest File Download",
     "content": ". | Search the item Shelfmark in the Pickup SIP search box . | Click on the Summary button . | This will take you to the Summary page, where you can see an overview of the SIP status . | Select the Master and Transcoded Access Files drop-down at the top on the page . | This will open a drop-down detailing information about the Master and transcoded Access files . | If you require a copy of the Master file, click the top download link next to the file . | If you require a copy of the transcoded Access file, click the second download link . | Copies of the chosen file version will be downloaded to the Downloads folder on your computer . | . ",
     "url": "/Documentation/AVSIPGEN/downloading_files#1-pre-ingest-file-download",
     "relUrl": "/AVSIPGEN/downloading_files#1-pre-ingest-file-download"
-  },"9": {
+  },"12": {
     "doc": "Downloading Files",
     "title": "2. Post-Ingest File Download",
     "content": " ",
     "url": "/Documentation/AVSIPGEN/downloading_files#2-post-ingest-file-download",
     "relUrl": "/AVSIPGEN/downloading_files#2-post-ingest-file-download"
-  },"10": {
+  },"13": {
     "doc": "Excel Batch Upload",
     "title": "Excel Batch Upload",
     "content": "The Excel Batch Upload option in the AV SIP Generator automates the creation of multiple Submission Information Packages (SIP) up to and including Stage 5. ",
     "url": "/Documentation/docs/AVSIPGEN/excel_batch_upload.html",
     "relUrl": "/docs/AVSIPGEN/excel_batch_upload.html"
-  },"11": {
+  },"14": {
     "doc": "Excel Batch Upload",
     "title": "Excel Spreadsheet",
     "content": "The data used to create the SIPs is taken from the template Excel spreadsheet. The spreadsheet headings indicate the required data and the stages it is used to populate. | 1. SAMI Search | 2. Select Source Files |   | 4. Physical Structure | 5. Process Metadata |   |   |   |   | Options |   | . | Shelfmark | Filename / Grouping | Directory | Item Type | Date | Reference SIP | Speed | Equalisation Standard | Noise Reduction | Duplicate pSIP | File Naming Schema | . 1. SAMI Search . 1.1. Shelfmark . The item’s Shelfmark as it appears on the physical item and the Tracking Database. For example: . | C433/81 | C797/01/05 | . Grouped items should match the SAMI record. For example: . | C1186/314-C1186/315 | C604/63; C604/588; C604/587 | . 2. Select Source files . 2.1. Filename / Grouping . If the audio files are created from a single Shelfmark and use the current file naming schema, this row can be left BLANK and the files will automatically be picked-up for processing. However, if the Shelfmark is a grouped item or does not use the current file naming schema, then the files need to be listed this column, in the order they intend to be added to Stage 4 Physical Structure. 2.2. Directory . Enter the location of the directory the files are stored. This is limited to the select repositories allowed by the AV SIP Generator, these are listed in the spreadsheet as dropdowns in the spreadsheet row. The full network address is required - \\\\server\\drive\\directory . 4. Physical Structure . 4.1. Item Type . Set the type of carrier the audio files were transferred from. | Cylinder | Disc | Sheet | Solid State | Tape | . For the Item Types definitions see Physical Item Types . 5. Process Metadata . 5.1. Date . Manually enter the date the item(s) were transferred or use the dropdown to extract the information from the file’s metadata. 5.2. Reference SIP . Enter the ID of the SIP the Process Metadata will be copied from. For information on how to find a SIP ID, see How to get a SIP ID . 5.3. Speed . Select a replay speed from the dropdown list, leave BLANK if it matches the speed in the reference SIP’s Process Metadata. 5.4. Equalisation Standard . Select the Equalisation Standard used on the replay device, leave BLANK if it matches the equlaisation in the reference SIP’s Process Metadata. 5.5. Noise Reduction . Select the type of Noise Reduction used on the replay device, leave BLANK if it matches the data in the reference SIP’s Process Metadata. Options . Duplicate pSIP . Select YES from the dropdown if a SIP already exists under the same Shelmark. File Naming Schema . Select FALSE if the filenames do not conform to the current schema. If set to FALSE, only basic illegal character checks are made on the filenames and all files are assigned to a single Node and Side in the Physical Structure. The files also need to be listed in the Filename / Grouping row (see 2.1.). ",
     "url": "/Documentation/docs/AVSIPGEN/excel_batch_upload.html#excel-spreadsheet",
     "relUrl": "/docs/AVSIPGEN/excel_batch_upload.html#excel-spreadsheet"
-  },"12": {
+  },"15": {
     "doc": "Excel Batch Upload",
     "title": "Workflow",
     "content": "1. New Excel Batch Upload . Log in to the AV SIP Generator. From the Create New menu on the main page, click the New Excel Batch Upload » button. From the Create New Batch from Excel page, click Choose File under the Select Your Excel file heading. Navigate to your Excel Batch spreadsheet. The batch will then be added to the Batch Preprocessing queue. Preprocessing validation checks for each row of the batch will begin, click the View button to see their progress. If the preprocessing completes with no errors the queued batch will turn green and Status set to Valid. If any of the rows fail, the batch will change red and the Status set to Failed. Click the View button to see the listed Error(s) for each row. After the batch validates successfully, a Make SIPs button will appear in the Continue column. Click this to submit the batch and build the SIPs. 2. My Excel Batch Uploads . To view the progress of the batch, click the View My Batch Uploads » button from the Create New menu on the home page. This will navigate to the SIP Batches - Excel page where you can view the progress of your batch. The Status column will list the overall progress of the batch: . | Awaiting: batch is queued for processing | In progress: SIPs are in the process of being built | Valid: All SIPs have successfully completed up to and including Stage 5 | . To see the Status of the individual SIPs in the batch, click the View » button. On the SIP Batch page you will see each SIP in the batch listed and a traffic light system, indicating the current status of each step. A SIP is complete when the Status indicates Processed. The 5 Steps of the SIP can be accessed and amended by clicking on the individual step buttons or picked-up from Stage 5 using the Resume » button. ",
     "url": "/Documentation/docs/AVSIPGEN/excel_batch_upload.html#workflow",
     "relUrl": "/docs/AVSIPGEN/excel_batch_upload.html#workflow"
-  },"13": {
+  },"16": {
     "doc": "How to Build a SIP",
     "title": "How to Build a SIP",
     "content": "This guide describes the required steps to build a Submission Information Package (SIP) using the British Library’s AV SIP Generator. | Step 1: Search SAMI | Step 2: Select Source Files | Step 3: File Analysis, Validation, and Transformation | Step 4: Physical Structure | Step 5: Process History | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html"
-  },"14": {
+  },"17": {
     "doc": "How to Build a SIP",
     "title": "Create a new SIP",
     "content": ". | Under the Create New menu select New SIP » | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#create-a-new-sip",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#create-a-new-sip"
-  },"15": {
+  },"18": {
     "doc": "How to Build a SIP",
     "title": "Step 1: Search SAMI",
     "content": "Assign the SIP to the Sound and Moving Image (SAMI) catalogue record . | Enter the item Shelfmark in the search bar . | Select the SAMI Product Record the SIP will be assigned to . | The selected SAMI Product will display some basic record information | Select Create pSIP to assign the SIP to the Record . | When created, pSIP created will appear in green below the button . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » . | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#step-1-search-sami",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#step-1-search-sami"
-  },"16": {
+  },"19": {
     "doc": "How to Build a SIP",
     "title": "Step 2: Select Source Files",
     "content": "Add files to the SIP . | Select the server where the files are located from the Select source path drop-down menu | Populate the Navigate to source files directory to add files dialog with the directory address where the files are stored . | Click the Get directories and files button to list the files and directories stored in that location . | Select the files you would like to upload to the SIP from the file list by clicking the plus (+) icon next to the filename . | The selected files will be listed in the Selected Audio Files: section . | Confirm the files are correct and listed in sequential order | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#step-2-select-source-files",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#step-2-select-source-files"
-  },"17": {
+  },"20": {
     "doc": "How to Build a SIP",
     "title": "Step 3: File Analysis, Validation, and Transformation",
     "content": "Analyse the files for conformity and generate access files. | Click the Copy All Files (Overwrite) button . | The files will be copied from their current location to a hold area . | The files then will go through a series anaylsis and verifcation checks to ensure they are correctly formed . | If the verification and analysis checks complete successfully, the files will be passed to transformation servers to create mp4 Access files . | After successful transformation the status bar will turn green and state All Files Transformed . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#step-3-file-analysis-validation-and-transformation",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#step-3-file-analysis-validation-and-transformation"
-  },"18": {
+  },"21": {
     "doc": "How to Build a SIP",
     "title": "Step 4: Physical Structure",
     "content": "Build a Physical Structure that accurately defines the relationship between the files and the physical item(s) they were transferred from . | By default an undefined Physical Type will be in-place . | Click the Select type… and select the transferred items Physical Type from the drop-down list of options | A description of each Physical Type can be found here: Physical Type . | After selecting the Physical Type, an object type and side will be created e.g. Tape 1 Side 1 . | Select the file for that Node and Side from the Select file… drop-down . | To add another side, click the Add Side button | To add another physical object, click the Add Node button | Using the necessary Nodes and Sides, build the complete Physical Structure for all transferred items and their files . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#step-4-physical-structure",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#step-4-physical-structure"
-  },"19": {
+  },"22": {
     "doc": "How to Build a SIP",
     "title": "Step 5: Process History",
     "content": "Describe the full transfer history of the item(s) including all processing and equipment used . | In the Worker List, fill in the details of any persons involved in the transfer of the item(s). Additional people can be added to the to the list by clicking the Add Worker button . | By default there will be an undefined Process Type in the Process History | Select the first Process from the Process Type drop-down list: . | Preparation | Migration | Capture | Editing | Processing | QC | . | Press the Add Process button under Process History to add a new process | Details on each Process can be found here: Process Type Definitions . | Enter the date of the Process in the date box . | Add each piece of equipment used in the transfer by selecting the Device Type in Device menu . | Populate all the drop-down options to accurately describe the model, make of each device and any replay parameters . | Include the serial number for each device, when available . | Add all the neccessary Input and Output connections between equipment | Ensure the numbered Inputs and Outputs of the equipment match the real world signal chain . | Once the Process History is fully detailed, press Save | To move to the next Step tick the Step Complete box and press Continue » | . Notes: . | A typical Process History will consist of a Migration, Capture and Editing stage | As a minimum the Process History requires a Migration stage | Common Process History examples can be viewed here: Example Process History | . ",
     "url": "/Documentation/docs/AVSIPGEN/how_to_build_a_sip.html#step-5-process-history",
     "relUrl": "/docs/AVSIPGEN/how_to_build_a_sip.html#step-5-process-history"
-  },"20": {
+  },"23": {
     "doc": "How to Name a File",
     "title": "How to Name a File",
     "content": " ",
     "url": "/Documentation/docs/naming_files/how_to_name_a_file.html",
     "relUrl": "/docs/naming_files/how_to_name_a_file.html"
-  },"21": {
+  },"24": {
     "doc": "How to Name a File",
     "title": "Introduction",
     "content": "This filenaming schema is to inform Audio Engineers how to name the files they are creating. It will also help cataloguers, curators and other staff working to locate and identify audio files they are accessing. Outline . A filename extends to the separator before the file extension (‘.wav’ for WAVE files). Filenames for sound files must be comprised of five fields (with an optional sixth of ‘item number’): . | 1 |   | 2 |   | OPTION |   | 3 |   | 4 |   | 5 | . | Originator | _ | Shelf Mark | _ | Item Number | _ | Side Number | _ | File Number | _ | Version Number | . Rules . | Fields may not be omitted with exception of ‘item numbers’ | Fields are separated by an underscore (‘_’) | No whitespace allowed (‘ ‘) | Do not pad with zeros | . 1. Originator . A record of where the digital file was digitised, typically the institution. | Description | Example | . | British Library, London | BL_ | . 2. Shelf Mark . The Shelf Mark of the physical item from which the digital file was created. Replace any existing separators in your Shelf Mark (e.g. ‘/’, ‘.’, ‘ ‘, &amp;c.) with a hyphen (‘-‘) as necessary . | Description | Example | . | C182/4 | BL_C182-4_ | . OPTION. Item Number . Where multiple physical items have been accessioned under a single Shelf Mark, e.g. published box sets, double cd releases. Add an ‘item number’ to ensure filenames remain unique. This is the only optional element in the schema and should be omitted where unique Shelf Marks exist for individual items. | Description | Example | . | First item from a box set of eight CDs | BL_1SS0005728i1 | . 3. Side Number . Record the Side of the physical item from which the file was made. A Side is defined as a change in a recorded sequence’s direction, relative to the other recorded sequences or the physical action needed to play the other sequences on the tape (i.e. turning a tape over). For born-digital files use ‘s0’. | Description | Example | . | First side of a cassette | BL_C182-4_s1 | . | Second side of a cassette | BL_C182-4_s2 | . 4. File Number . Record the order of each file in relation to its side. All files should start at ‘1’. Files numbered 1-9 should be should preceded with a zero (e.g. ‘f01’). | Description | Example | . | Fourth track from a CD-R | BL_C1298-110_s1_f04 | . 5. Version Number . Record the version number of the file. In the vast majority of cases, only one version of a file will be created. In cases where subjective choices have been made (alternate stylus choice, playback speed &amp;c.) requiring multiple files, identify the files using incrementing version numbers, preceded by a ‘v’ character (v2, v3, etc.). | Description | Example | . | Second version of the fourth file from the second side of BL item C182/4 | BL_C182-4_s2_f04_v2 | . ",
     "url": "/Documentation/docs/naming_files/how_to_name_a_file.html#introduction",
     "relUrl": "/docs/naming_files/how_to_name_a_file.html#introduction"
-  },"22": {
+  },"25": {
     "doc": "British Library Sound &amp; Vision",
     "title": "British Library Sound &amp; Vision",
     "content": " ",
     "url": "/Documentation/",
     "relUrl": "/"
-  },"23": {
+  },"26": {
     "doc": "British Library Sound &amp; Vision",
     "title": "Technical Services",
     "content": "The Technical Services team in Sound &amp; Vision is responsible for the preservation of the Library’s physical sound collection, the development of technologies to preserve future digital acquisitions, and for making our collections accessible to those who wish to hear them. This is the central documentation repository for audio preservation undertaken at the British Library. All pages are currently in draft form and very much work in progress! . ",
     "url": "/Documentation/#technical-services",
     "relUrl": "/#technical-services"
-  },"24": {
-    "doc": "Naming Files",
-    "title": "Naming Files",
-    "content": "The following Naming Files pages outline how to apply the Library’s filenaming schema to preservation audio files. ",
-    "url": "/Documentation/docs/naming_files/",
-    "relUrl": "/docs/naming_files/"
-  },"25": {
-    "doc": "AV SIP Generator",
-    "title": "AV SIP Generator",
-    "content": "The AV SIP Generator is Sound &amp; Vision’s browser-based tool for building Submission Information Packages (SIP) for ingest into the Library’s digital repository for long-term preservation. The following pages outline how to use the tool and build a SIP. ",
-    "url": "/Documentation/docs/AVSIPGEN/",
-    "relUrl": "/docs/AVSIPGEN/"
-  },"26": {
+  },"27": {
     "doc": "Transfer Processes",
     "title": "Transfer Processes",
     "content": "Navigate to each format for instruction on transfer processes at the British Library . ",
     "url": "/Documentation/docs/transfer_processes/",
     "relUrl": "/docs/transfer_processes/"
-  },"27": {
+  },"28": {
+    "doc": "AV SIP Generator",
+    "title": "AV SIP Generator",
+    "content": "The AV SIP Generator is Sound &amp; Vision’s browser-based tool for building Submission Information Packages (SIP) for ingest into the Library’s digital repository for long-term preservation. The following pages outline how to use the tool and build a SIP. ",
+    "url": "/Documentation/docs/AVSIPGEN/",
+    "relUrl": "/docs/AVSIPGEN/"
+  },"29": {
     "doc": "Quality Control",
     "title": "Quality Control",
     "content": "Quality Control (QC) is the final stage of the digitisation workflow. An engineer will assess a percentage of their colleagues transfer work to ensure the necessary best practice and standards are met. The work is completed by assessing the quality of the technical transfer and its accompanying metadata. QC is necessary for collections consisting of five or more items. Collections with less than five items should have their status set to Not Required in the Tracking Database. Full QC guidelines for audio preservation can be found in the Table of Contents below. ",
     "url": "/Documentation/docs/quality_control/",
     "relUrl": "/docs/quality_control/"
-  },"28": {
+  },"30": {
+    "doc": "Naming Files",
+    "title": "Naming Files",
+    "content": "The following Naming Files pages outline how to apply the Library’s filenaming schema to preservation audio files. ",
+    "url": "/Documentation/docs/naming_files/",
+    "relUrl": "/docs/naming_files/"
+  },"31": {
     "doc": "Maintenance Tasks",
     "title": "Maintenance Tasks",
     "content": " ",
     "url": "/Documentation/AVSIPGEN/maintenance_tasks/",
     "relUrl": "/AVSIPGEN/maintenance_tasks/"
-  },"29": {
+  },"32": {
     "doc": "Maintenance Tasks",
     "title": "1. Abandoned SIPs",
     "content": "Abandoned SIPs are SIPs that have been left incomplete in the AV SIP Generator tool, with no clear intention to be completed. This definition does not include SIPs that are part of collections awaiting Stage 2 Cataloguing. The following instructions describe the process of identifying incomplete SIPs and if required, fully deleting them. SIP Status . The first step is to scan a range of SIP IDs to identify their current status. | Open the sip_status.py Python script in a text editor | Define the range of SIP IDs you would like to search | Run the script from the command line interface | The script will cycle through the defined range of IDs and record all SIPs completed up to Stage 7 (Logical Structure) | The list will be recorded to a sip_status.txt text file in the following format | . | Output Format | Example | . | step; sipid; shelfmark | 5;10088;C602/450 | . The Shelf Marks can then be exported and compared against a list of completed collections, to confirm if they are abandoned and can be deleted. ",
     "url": "/Documentation/AVSIPGEN/maintenance_tasks/#1-abandoned-sips",
     "relUrl": "/AVSIPGEN/maintenance_tasks/#1-abandoned-sips"
-  },"30": {
+  },"33": {
     "doc": "Maintenance Tasks",
     "title": "2. Archived SIPs",
     "content": "Archived SIPs are SIPs that have been ‘deleted’ by a user in the Tool using the Remove button. This function does not actually delete a SIP but removes in from the search index and marks it as Archived in the JSON. | Open the sip_archived.py Python script in a text editor | Define the range of SIP IDs you would like to search | Run the script from the command line interface * * | . ",
     "url": "/Documentation/AVSIPGEN/maintenance_tasks/#2-archived-sips",
     "relUrl": "/AVSIPGEN/maintenance_tasks/#2-archived-sips"
-  },"31": {
+  },"34": {
     "doc": "Maintenance Tasks",
     "title": "3. Deleting SIPs",
     "content": "The following method describes how to fully delete a SIP. WARNING: this will fully delete all traces of the SIP and remove any files associated with it, the process cannot be reversed. | List each SIP ID in SIPstoDelete.txt file | Run the sip_delete.py Python script from the command line interface | The script will run through the list and fully delete the SIPs, including all associated files | . Note the above scripts reuire the config.py file to function . ",
     "url": "/Documentation/AVSIPGEN/maintenance_tasks/#3-deleting-sips",
     "relUrl": "/AVSIPGEN/maintenance_tasks/#3-deleting-sips"
-  },"32": {
+  },"35": {
     "doc": "MiniDisc",
     "title": "MiniDisc",
     "content": "This is how to transfer minidisc . ",
     "url": "/Documentation/docs/transfer_processes/minidisc.html",
     "relUrl": "/docs/transfer_processes/minidisc.html"
-  },"33": {
+  },"36": {
     "doc": "Post-Transfer Tasks",
     "title": "Post-Transfer Tasks",
     "content": " ",
     "url": "/Documentation/docs/AVSIPGEN/post-transfer_tasks.html#post-transfer-tasks",
     "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html#post-transfer-tasks"
-  },"34": {
+  },"37": {
     "doc": "Post-Transfer Tasks",
     "title": "1. How to Swap Sides",
     "content": "In certain circumstances it will be necessary to change the existing Physical Structure in a SIP. The following guide outlines the steps to download, rename, re-add and reassign the files in the Physical Structure. Before making any changes download backup copies of the WAV files from the Summary Page in case you need to revert back to the original files. Details on downloading files from the AV SIP Generator can be found at Downloading Files . | Search the item Shelfmark in the Pickup SIP search box . | Click on the Stage 2 Select Files button . | This will take you to the Select Source Files page, where you can view all the files attached to the SIP . | Take note of the source \\server\\directory as this is the location the files will be returned to. To remove the files from the SIP, click the minus (-) symbol next to each file listed under the Selected Audio Files section. Note: if the source directory has since been deleted an error will appear stating the location no longer exists. To overcome this, recreate the original directory structure on the server so the files can be moved back to their source location . | After deselecting the files, click Save to record the change . | Leave the SIP tool and use Windows File Explorer to navigate to the source directory where the files are now stored | Delete the .md5 file checksums | Rename the files to match the new ordering. For example s1_f01_v1 =&gt; s2_f01_v1 . Details on the Library’s file naming schema for audio files can be found at How to Name a File . | Return to the Select Source Files page and click Get directories and files. Note: the source path to the files should be saved from the original selection . | A file list will appear, select the files to re-attach to the SIP by pressing the plus (+) symbol next to each one | The selected files will be listed below in the Selected Audio Files section . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » . | This will take you to Step 4: File Analysis, Validation, and Transformation | Click the Copy All Files (Overwrite) button . | The files will be copied from their source location to the hold area for analysis . | After successful verification the files will be passed to the transformation servers . | Once all processing is complete, press Save | To move to the next Step tick the Step Complete box and press Continue » | This will take you to Step 5: Physical Structure, where the existing, empty Physical Structure will be visible . | Click on Select file… drop-down list and assign the renamed files to their respective Node(s) and Sides . | Once complete, press Save | To move to the next Step tick the Step Complete box and press Continue » . | Press Step Complete and Continue on all subsequent Steps, this will re-save the existing data in each Step, without altering it | . ",
     "url": "/Documentation/docs/AVSIPGEN/post-transfer_tasks.html#1-how-to-swap-sides",
     "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html#1-how-to-swap-sides"
-  },"35": {
+  },"38": {
     "doc": "Post-Transfer Tasks",
     "title": "Post-Transfer Tasks",
     "content": " ",
     "url": "/Documentation/docs/AVSIPGEN/post-transfer_tasks.html",
     "relUrl": "/docs/AVSIPGEN/post-transfer_tasks.html"
-  },"36": {
+  },"39": {
     "doc": "Spectrum Analysis",
     "title": "Spectrum Analysis",
     "content": "Specturm analysis of the audio signal can highlight issues that are not easily identifiable from the waveform view alone, such as clock errors and drop-outs. Clock sync errors visible across the spectrum . To open the Spectrogram in Wavelab, click the Spectrogram tab below the Waveform display in the Audio Editor view. Ensure the full frequecy spectrum is visible by increasing its amplitude by adjusting the sliders below the Editor window. ",
     "url": "/Documentation/quality_control/quality_control_spectrum_analysis/",
     "relUrl": "/quality_control/quality_control_spectrum_analysis/"
-  },"37": {
+  },"40": {
     "doc": "Quality Control Status",
     "title": "Quality Control Status",
     "content": "Once the Quality Control (QC) checks are complete, the QC Engineer should update the Tracking Database to reflect the QC status with the following fields: . QC: Transfer / P-SIP . | Field | Value | . | QC Date | DD/MM/YY | . | QC Status | Pass, Fail, Not Required | . | QC Engineer | Name | . | QC Notes | Any relevant notes | . ",
     "url": "/Documentation/quality_control/quality_control_status/",
     "relUrl": "/quality_control/quality_control_status/"
-  },"38": {
+  },"41": {
     "doc": "Quality Control Status",
     "title": "Recording the Status",
     "content": "Pass . All QC checks pass and the no further action is required . Fail . If one or more checks has not been met, the item should be marked as Fail and the relevant details added to the QC Notes field for the Transfer Engineer. The Transfer Engineer should be notified and the original item returned to them for remedial action. Resolved . When the QC Fail is subsequently fixed the Transfer Engineer should update the status to Resolved and add any relevant details to QC Notes field. Not Required . Items in the collection that are not subject to QC checks should have their status set to Not Required. Even with a Not Required status, all the above Database fields should be completed so we can accurately track the progress of a collection. ",
     "url": "/Documentation/quality_control/quality_control_status/#recording-the-status",
     "relUrl": "/quality_control/quality_control_status/#recording-the-status"
-  },"39": {
+  },"42": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "4-Track and Quater-Track Filenames",
     "content": "This guide outlines how to name audio files transferred from 4-Track and Quarter-Track tape. The three examples described below are the most common scenarios, other configurations exist but these examples will provide the neccessary logic to manage exceptions. | Four Mono Recordings | Two Stereo Recordings | Multiple Recording Configurations | . Note: This guide only covers the Side and File sections of the filename for illustration. A complete guide to the Library’s filenaming schema can be found here at How to Name a File . ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#4-track-and-quater-track-filenames",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#4-track-and-quater-track-filenames"
-  },"40": {
+  },"43": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "1. Four Mono Recordings",
     "content": "A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape. The recordings can run in either direction. While a tape can only have two physical sides each channel of a 4-Track tape is considered it’s own Side. | Tape Channel | Filename Side | . | 1 | s1 | . | 2 | s2 | . | 3 | s3 | . | 4 | s4 | . ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings"
-  },"41": {
+  },"44": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "2. Two Stereo Recordings",
     "content": "A standard Quarter-Track configuration. Two stereo recordings, each recorded on channels 1,3 and channels 2,4, in opposite directions, as stereo pairs. ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#2-two-stereo-recordings",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#2-two-stereo-recordings"
-  },"42": {
+  },"45": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "3. Multiple Recording Configurations",
     "content": "A mixed configuration of mono and stereo recordings, across all of the four channels. ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#3-multiple-recording-configurations",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#3-multiple-recording-configurations"
-  },"43": {
+  },"46": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "4-Track and Quarter-Track Filenames",
     "content": " ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html"
-  },"44": {
-    "doc": "System Settings",
-    "title": "Wavelab Capture Settings",
-    "content": "The primary Digitial Audio Workstation (DAW) used for audio capture and editing is Steinberg’s Wavelab Pro. The following file capture and edit settings should be applied when first setting up Wavelab and routinely verfied. ",
-    "url": "/Documentation/docs/transfer_processes/system_settings.html#wavelab-capture-settings",
-    "relUrl": "/docs/transfer_processes/system_settings.html#wavelab-capture-settings"
-  },"45": {
-    "doc": "System Settings",
-    "title": "1. Audio Capture",
-    "content": "Open the Recording Dialog from the Main Audio Editor by clicking the Record button in the Transport control, click the blue audio format text to open the Audio File Format window and set the file capture settings: . | Type | Wave (Microsoft) | . | File Extension | wav | . | Audio Format | PCM (uncompressed) | . | Channels | Multi Stereo | . | Sample Rate | 96 000 Hz | . | Bit Depth | 24 | . | Meta-Data | -&gt; Inherit from Source File | . Click Okay to save the settings. ",
-    "url": "/Documentation/docs/transfer_processes/system_settings.html#1-audio-capture",
-    "relUrl": "/docs/transfer_processes/system_settings.html#1-audio-capture"
-  },"46": {
-    "doc": "System Settings",
-    "title": "2. Metadata",
-    "content": "Files are set to embed the following metadata in the RIFF chunk of the WAVE file header: . | Name of engineer | Capture software | Date of transfer | . To automatically write metadata to file during capture, open the Metadata window from Tool Windows &gt; Metadata &gt; RIFF tab &gt; Edit and enter the following values: . | Code | Name | Value | . | IENG | Engineer | Name | . | ISFT | Originator Software | @WaveLabAndVersion@ | . | ICRD | Date | @Date12@T@Time3@Z | . Note - Date and time is formatted in SMPTE-25 . Commit the changes by clicking Use as Default for New .wav Files . Embeded file metadata can be viewed at any time in the Metdata window. ",
-    "url": "/Documentation/docs/transfer_processes/system_settings.html#2-metadata",
-    "relUrl": "/docs/transfer_processes/system_settings.html#2-metadata"
   },"47": {
-    "doc": "System Settings",
-    "title": "3. File Preferences",
-    "content": "Audio file preferences are set in the File &gt; Preference &gt; Audio Files &gt; File tab, ensure the options are selected / deseleted according to the list below: . | Support RF64 File Format | Create Optimized Audio File Headers | Write Markers in WAV File Header (RIFF Format) | Write Markers in WAV File Header (BWF Format) | Write Markers in Seperate File | Create Peak Files in an Independent Folder | Create Peak Files When Writing Audio Files | . ",
-    "url": "/Documentation/docs/transfer_processes/system_settings.html#3-file-preferences",
-    "relUrl": "/docs/transfer_processes/system_settings.html#3-file-preferences"
-  },"48": {
-    "doc": "System Settings",
-    "title": "System Settings",
-    "content": " ",
-    "url": "/Documentation/docs/transfer_processes/system_settings.html",
-    "relUrl": "/docs/transfer_processes/system_settings.html"
-  },"49": {
     "doc": "Tape",
     "title": "Tape",
     "content": "This is how to transfer tape . ",
