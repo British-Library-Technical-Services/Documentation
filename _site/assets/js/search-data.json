@@ -259,7 +259,7 @@
   },"43": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "1. Four Mono Recordings",
-    "content": "A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape. The recordings can run in either direction. While a tape can only have two physical sides each channel of a 4-Track tape is considered it’s own Side. | Tape Channel | Filename Side | . | 1 | s1 | . | 2 | s2 | . | 3 | s3 | . | 4 | s4 | . ",
+    "content": "A standard 4-Track configuration. Four mono recordings, one on each channel, each lasting the full duration of the tape. The recordings can run in either direction. While a tape can only have two physical sides each channel of a 4-Track tape is considered it’s own Side. ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#1-four-mono-recordings"
   },"44": {
@@ -271,7 +271,7 @@
   },"45": {
     "doc": "4-Track and Quarter-Track Filenames",
     "title": "3. Multiple Recording Configurations",
-    "content": "A mixed configuration of mono and stereo recordings, across all of the four channels. ",
+    "content": "A mixed configuration of mono and stereo recordings, across all of the four channels. 3.1. Side 1 Breakdown . | Files: 1 | Recordings: 1 | Configurtation: 2-channel (audio in channel two partially missing) | . 3.2. Side 2 Breakdown . | Files: 3 | Recordings: 3 | Configuration: 1-channel (s2_f01, s2_f03); 2-channel (s2_f02) | . 3.3. Side 3 Breakdown . | Files: 1 | Recordings: 1 | Configuration: 1-channel | . 3.4. Side 4 . | Files: 2 | Recordings: 2 | Configuration: 1-channel | . ",
     "url": "/Documentation/docs/naming_files/quarter_track_tape_filenames.html#3-multiple-recording-configurations",
     "relUrl": "/docs/naming_files/quarter_track_tape_filenames.html#3-multiple-recording-configurations"
   },"46": {
