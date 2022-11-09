@@ -103,4 +103,4 @@ A mixed configuration of mono and stereo recordings, across all of the four chan
 
 <img src="{{ site.baseurl }}/assets/images/filenaming_schema/7_how_to_name_quarter_track_files.png">
 
-<!-- To aid the cataloguing team understand complex configurations in relation to the order of content on the tape, it is advisible to draw the layout for them: [link]("github/Documentation/assets/linked_files/Tape to Filename reference template v0.2a (4-track).docx") -->
+_Note - to aid the cataloguing team understand complex configurations in relation to the order of content on the tape, it is advisable to download the template diagram [here](https://github.com/British-Library-Technical-Services/Documentation/blob/8a1aec9bc1b118636c2a2992744466b77eca7d5f/assets/linked_files/Tape%20to%20Filename%20reference%20template%20v0.2a%20(4-track).docx) and draw the layout._
