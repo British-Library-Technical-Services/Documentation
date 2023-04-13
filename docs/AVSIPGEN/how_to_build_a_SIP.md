@@ -3,7 +3,7 @@ layout: page
 title: How to Build a SIP
 last_modified_date: "2022-08-11"
 parent: AV SIP Generator
-nav_order: 1
+nav_order: 2
 ---
 
 # How to Build a SIP
