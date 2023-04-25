@@ -7,7 +7,7 @@ nav_order: 1
 ---
 # Audio Capture Settings
 
-This page outlines the signal flow and settings to capture audio in the Library's sound studios.  Signal is captured from analogue sources at a sample rate of **96kHz** and a word-length of **24 bits**.  The target preservation file format is **Lossless PCM WAVE** file.  Each studio is equipped with two 8-channel Analogue-to-Digital converters, connected over RJ45 (Dante) or AES3, depending on the cofiguration.
+This page outlines the signal flow and settings to capture audio in the Library's sound studios.  Signal is captured from analogue sources at a sample rate of **96kHz** and a word-length of **24 bits**.  The target preservation file format is **Lossless PCM WAVE** file.  Each studio is equipped with two 8-channel Analogue-to-Digital converters, connected over RJ45 (Dante) or AES3, depending on the configuration.
 
 Engineers should ensure their equipment settings match those listed below and routinely verify they are correct before undertaking transfer work.
 
