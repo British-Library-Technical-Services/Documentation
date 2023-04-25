@@ -55,8 +55,8 @@ plugins:
 #logo: "/assets/images/just-the-docs.png"
 
 aux_links:
-  "Visit the British Library":
-    - "https://www.bl.uk/"
+  "Listen to our Collections":
+    - "https://sounds.bl.uk/"
 
 footer_content: "Copyright British Library"
 last_edit_timestamp: true
