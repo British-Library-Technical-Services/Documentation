@@ -104,6 +104,8 @@ Analyse the files for conformity and generate access files.
 
 Build a Physical Structure that accurately defines the relationship between the files and the physical item(s) they were transferred from
 
+_Note: this page has [Auto-Generate Functions](auto_generate_functions#1-physical-structure) available_
+
 1. By default an undefined Physical Type will be in-place
 
     <img src="{{ site.baseurl }}/assets/images/how_to_build_a_sip/15_physical_structure.png">
