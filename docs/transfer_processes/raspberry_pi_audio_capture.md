@@ -41,7 +41,7 @@ Open **Options > Preferences > Audio > Device** and set the following settings f
 | Blocksize | 2048 |
 | Bit Depth | 24 |
 
-<img src="{{ site.baseurl }}/assets/images/system_settings/4_reaper_audio_device_settings.png"
+<img src="{{ site.baseurl }}/assets/images/system_settings/4_reaper_audio_device_settings.png">
 
 #### File Settings
 Open **Options > Preferences > Audio > Recording**
@@ -52,7 +52,7 @@ Set "Recorded Filenames" so each file is named according to the name set in the 
 
 Ensure "Start new files every 1024 megabytes" is **unchecked**
 
-<img src="{{ site.baseurl }}/assets/images/system_settings/5_reaper_recording_preferences.png"
+<img src="{{ site.baseurl }}/assets/images/system_settings/5_reaper_recording_preferences.png">
 
 Due to the limited onboard stoage allocated to the Pi, files are recorded directly onto External SSD drives, connected via high-speed USB 3.
 
@@ -67,7 +67,7 @@ Set the following under the Recording settings:
 | Large files | Auto WAV/RF64 |
 | Write BWF ('bext) chunk | &#x2705; |
 
-<img src="{{ site.baseurl }}/assets/images/system_settings/6_reaper_project_settings.png"
+<img src="{{ site.baseurl }}/assets/images/system_settings/6_reaper_project_settings.png">
 
 ### 2.2. Editing and Exporting Files
 Reaper uses a non-destrcutive editing system, so files trimed in the timeline after recording muct be exported as new files.  There are several ways to do this but the simplist it to use the Consolidate/Eport Tracks function.
@@ -87,7 +87,7 @@ _*Note - update as required to match source file_
 
 Ensure "Ignore silence shorter than:" is **unchecked**
 
-<img src="{{ site.baseurl }}/assets/images/system_settings/7_reaper_consolidate_export.png"
+<img src="{{ site.baseurl }}/assets/images/system_settings/7_reaper_consolidate_export.png">
 
 To edit and Consolidate/Export files in the Timeline:
 
