@@ -44,7 +44,7 @@ All files need to be saved in a source directory named with the engineer's name 
 | | *.wav |
 | | *.md5 |
 | | EnigneerName_Date_BatchNo_TrackingSpreadsheet.xlsx |
-| | EnigneerName__Date_BatchNo_ExcelBatchUpload.xlsx |
+| | EnigneerName_Date_BatchNo_ExcelBatchUpload.xlsx |
 
 The Tracking and Batch SIP spreadsheets are required and all data listed within must match against the audio files in the directory.
 
