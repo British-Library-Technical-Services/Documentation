@@ -11,7 +11,7 @@ nav_order: 3
 
 This page outlines the workflow and requirements for backing up audio preservation files and metadata to the department's offline storage solution.
 
-The backup service is written in Python and the code is accessible [here](/link).
+The backup service is written in Python and the code is accessible [here](https://github.com/British-Library-Technical-Services/file-backup-service).
 
 1. [Workflow](1-workflow)
 2. [Requirements and Data Formatting](#2-requirements-and-data-formatting)
@@ -89,7 +89,7 @@ Once the intial copy to the staging area is complete and the drive ejected, a se
 1. Existing checksums will be deleted
 2. Embedded BWF metadata will be rewritten to the RIFF INFO chunk
 3. New checksum files will be generated
-4. Access files will be generated and saved to the **_MSO_audio** directory
+4. Access files will be generated and saved to the **_mso_audio** directory
 5. The Tracking spreadsheet will be emailed to the Workflow Support Officer
 6. The files will be then be moved from **_staging_area** to **_backup_storage**,
 and saved to the Engineer's named directory and a batch-number-date named directory created
