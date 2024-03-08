@@ -21,13 +21,15 @@ The backup service is written in Python and the code is accessible [here](/link)
 
 ## 1. Workflow
 
+Outline of the File Backup Service operations.
+
 <!-- [image] -->
 <img src="{{ site.baseurl }}/assets/images/system_settings/9_backupservice_workflow.png">
 
 
 ## 2. Requirements and Data Formatting
 
-The following data is required to start the backup service.
+The following data is required to run the backup service.
 
 * Audio files
 * MD5 Checksum files
@@ -42,7 +44,7 @@ All files need to be saved in a source directory named with the engineer's name 
 | | *.wav |
 | | *.md5 |
 | | EnigneerName_Date_BatchNo_TrackingSpreadsheet.xlsx |
-| | EnigneerName_Date_BatchNo_ExcelBatchUpload.xlsx |
+| | EnigneerName__Date_BatchNo_ExcelBatchUpload.xlsx |
 
 The Tracking and Batch SIP spreadsheets are required and all data listed within must match against the audio files in the directory.
 
@@ -82,12 +84,12 @@ To copy files from your drive to the backup storage
 
 ## 5. Postprocessing and Backup Storage
 
-Once the intial copy to the staging area is complete and the drive ejected, a series of postprocesses will begin.  Engineers do not need to be present for this and can leave the service to complete without supervision.
+Once the intial copy to the staging area is complete and the drive ejected, a series of postprocesses will begin.  You do not need to be present for this and can leave the service to complete without supervision.
 
 1. Existing checksums will be deleted
 2. Embedded BWF metadata will be rewritten to the RIFF INFO chunk
 3. New checksum files will be generated
-4. Access files will be generated and saved to the **_MSO_Audio** directory
+4. Access files will be generated and saved to the **_MSO_audio** directory
 5. The Tracking spreadsheet will be emailed to the Workflow Support Officer
 6. The files will be then be moved from **_staging_area** to **_backup_storage**,
 and saved to the Engineer's named directory and a batch-number-date named directory created
