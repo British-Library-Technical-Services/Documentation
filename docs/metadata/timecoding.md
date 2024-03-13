@@ -74,6 +74,10 @@ The Region/Marker Manager allows you to view and edit the list of created time r
 
 <img src="{{ site.baseurl }}/assets/images/timecoding/8_region_marker_list.png">
 
+* By default the cursor will be set to "snap" to the timecode grid, to unlock this and allow more freeform selection uncheck the magnet icon in the lefthand toolbar:
+
+<img src="{{ site.baseurl }}/assets/images/timecoding/9_snapping.png">
+
 ### 1.4. Export Time Ranges
 
 Timecode ranges can be exported to a csv file.  To export the the created regions:
