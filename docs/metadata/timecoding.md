@@ -72,6 +72,8 @@ The Region/Marker Manager allows you to view and edit the list of created time r
 
 * The created time range will also appear in the Region/Marker list where it can be named and edited
 
+_Note - each timecode region should be named with SAMI Call Number it refers to (e.g. C1226-432 C1)_
+
 <img src="{{ site.baseurl }}/assets/images/timecoding/8_region_marker_list.png">
 
 * By default the cursor will be set to "snap" to the timecode grid, to unlock this and allow more freeform selection uncheck the magnet icon in the lefthand toolbar:
@@ -86,3 +88,5 @@ Timecode ranges can be exported to a csv file.  To export the the created region
 * Click the **Options** button
 * Select **Export regions/markers...** in the menu
 * A dialog will open, name the csv file and select a save location
+
+_Note - csv files should be saved with the same name as the audio file they refer to (e.g. BL_C1226-432_s1_f01_v1.csv)_
