@@ -6,7 +6,7 @@ parent: Metadata
 nav_order: 1
 ---
 
-# Timcoding Ranges
+# Timecoding Ranges
 This page outlines the software and processes for defining audio timecode ranges as part of Stage 2 Cataloguing.
 
 Timecode ranges are required to be recorded in [SMPTE25](https://en.wikipedia.org/wiki/SMPTE_timecode) so they are interoparable with the [AV SIP Generator](https://british-library-technical-services.github.io/Documentation/docs/AVSIPGEN/#av-sip-generator).
