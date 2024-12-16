@@ -7,8 +7,6 @@ nav_order: 2
 # page compiled from information supplied by Karl Jenkins
 ---
 
-This is also a test
-
 # Raspberry Pi Audio Capture
 The Raspberry Pi is a low-cost solution for audio digitisation. 
 
