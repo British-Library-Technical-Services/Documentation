@@ -3,7 +3,7 @@ layout: page
 title: Raspberry Pi Audio Capture
 last_modified_date: "2023-02-06"
 parent: Transfer Processes
-nav_order: 2
+nav_order: 4
 # page compiled from information supplied by Karl Jenkins
 ---
 
